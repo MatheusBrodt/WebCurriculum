@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+div.menu {
+    background-color: #00061a;
+    display: flex;
+    align-items: flex-start;
+    height: 70px;
+    align-items: center;
+}
+div.menu h1 {
+    color: azure;
+    margin: 30px;
+    margin-right: 340px;
+    font-style: italic;
+}
+div.menu a {
+    margin: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: azure;
+}
+div.image {
+    display: flex;
+    align-items: flex-start;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    background-color: #E6E6FA;
+    margin-top: -4px;
+    padding-bottom: 35px;
+}
+div.image img{
+    margin-left: 80px;
+    margin-top: -270px;
+    margin-right: -150px;
+}
+div.image h1 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+div.image h2 {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+div.person_info {
+    width: 550px;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+div.person_info button {
+    height: 30px;
+    width: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: 15px;
+    background-color: #0030cc;
+    color: azure;
+}
+div.projects h1 {
+    margin: 10px;
+    margin-left: 25px;
+}
+div.projects a {
+    margin: 20px;
+    text-decoration: none;
+}
+div.contact {
+    background-color: #00061a;
+    height: 250px;
+    padding: 10px;
+    color:#e6ebff;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+div.contact h1 {
+    margin-bottom: 15px;
+}
+div.links a {
+    margin-inline: 35px;
+}
+a.email {
+    color: #e6ebff;
+    text-decoration: none;
+}

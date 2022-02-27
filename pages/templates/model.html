@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/style_home.css' %}">
+
+    {% block title %}
+    <title>Home Class</title>
+    {% endblock %}
+
+</head>
+<body>   
+    <header>
+        {% block menu %}
+        <div class="menu">
+            <h1>Matheus Brodt</h1>
+            <nav>
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'projects' %}">Projetos</a>
+                <a href="{% url 'qualifications' %}">Qualificações</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
+        {% endblock %}
+        <img src="{% static 'img/cpu.jpg' %}" alt="Cidade Tecnologica" height="450px" width="100%">
+        <div class="image">
+            <img src="{% static 'img/foto.jpeg' %}" alt="Foto de Perfil">
+            {% block person %}
+            <div class="person_info">
+                <h1>Matheus Luis Brodt</h1>
+                <h2><i>Desenvolvedor Backend</i></h2>
+                <p>
+                    Sou uma pessoa completamente apaixonada por tecnologia, desde criança sempre me senti atraído por filmes
+                    sobre robôs, inteligência artificial tecnologias futurístas e etc.
+                </p>
+                <p>
+                    Hoje em dia dedico meu tempo para aprender cada vez mais, me considero um eterno aprendedor.
+                    Sem contar que neste mundo da tecnologia temos sempre novidades as quais devemos nos atualizar
+                    para não ficar para trás.
+                </p>
+                <p>
+                    Atualmente trabalho mais na parte do back-end, utilizo Python com minha línguagem oficial 
+                    junto com Django, MySql, AWS. Já no front-end com Python utilizo a bíblioteca 
+                    Tkinter.
+                </p>
+                <p>
+                    Também me dedico no desenvolvimento Mobile, para desenvolver aplicativos para Android ou IOS 
+                    utilizo React Native no front e Python no back-end.
+                </p>
+            </div>
+            {% endblock %}
+        </div>
+    </header>
+        
+    {% block resp %}
+    <div class="resp">
+    </div>
+    {% endblock %}
+
+    {% block contacts %}
+    <div id="contact" class="contact">
+        <h1>Contatos</h1>
+        <h3>Telefone: (51) 9 8557-5642 / (51) 2113-5467</h3>
+        <a class="email" href="mailto:matheus_brodt@outlook.com">
+            <h3>E-mail: matheus_brodt@outlook.com</h3>
+        </a>
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/matheus-b-496738127/" target="_blank">
+                <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn" height="30px" width="30px">
+            </a>
+            
+            <a href="https://github.com/MatheusBrodt" target="_blank">
+                <img src="{% static 'img/github.png' %}" alt="GitHub" height="30px" width="30px">
+            </a>
+            
+            <a href="https://api.whatsapp.com/send?phone=5551985575642&text=" target="_blank">
+                <img src="{% static 'img/whatsapp.png' %}" alt="WhatsApp" height="30px" width="30px">
+            </a>
+
+            <a href="https://www.instagram.com/matheus.brodt/" target="_blank">
+                <img src="{% static 'img/instagram.png' %}" alt="Instagram" height="30px" width="30px">
+            </a>
+        </div>
+
+    </div>
+    {% endblock %}
+    
+</body>
+</html>

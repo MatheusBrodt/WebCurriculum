@@ -1,0 +1,42 @@
+div.back {
+    background-color: #E6E6FA;
+}
+div.qualifications {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}   
+h1.title {
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 30pt;
+}
+div.tec2 {
+    text-align: right;
+}
+div.tec {
+    text-align: left;
+}
+div.tec progress {
+    width: 250px;
+    margin-left: -90px;
+    height: 35px;
+}
+div.tec2 progress {
+    width: 250px;
+    margin-right: -90px;
+    height: 35px;
+}
+div.tec h3 {
+    margin-left: -90px;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+div.tec2 h3 {
+    margin-right: -90px;
+    font-weight: bold;
+    font-size: x-large;
+}

@@ -1,0 +1,45 @@
+div.project {
+    padding: 5px;
+    background-color: #E6E6FA;
+}
+div.project h1 {
+    margin-left: 20px;
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 30pt;
+}
+div.repo {
+    border-style: solid;
+    border-width: 2px;
+    margin-block: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+div.repo h3 {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+div.repo p {
+    font-size: 13pt;
+    font-style: italic;
+}
+div.img_project img {
+    border-radius: 5px;
+    border-style: ridge;
+    border-width: 2px;
+    border-color: black;
+    margin-inline: 10px;
+}
+div.img_project {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+div.repo a {
+    margin-left: 15px;
+    font-style: italic;
+    color: blue;
+    font-weight: bold;
+}

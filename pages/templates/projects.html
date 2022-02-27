@@ -1,0 +1,68 @@
+{% extends 'model.html' %}
+{% load static %}
+
+{% block title %}
+    <title>My Projects</title>
+{% endblock %}
+
+{% block resp %}
+
+<link rel="stylesheet" href="{% static 'css/style_projects.css' %}">
+
+<div class="project">
+    <h1>Projetos...</h1>
+
+    <div class="repo">
+        <h3>Sistema de Gerenciamento de Laboratório Óptico</h3>
+        <p>Este sistema realiza o rastreio de serviços dentro do laboratório. O sistema também realiza um 
+            controle de estoque, permitindo realizar reservas das lentes remotamente.
+        </p>
+        <div class="img_project">
+            <img src="{% static 'img/projects/lab_system/lens_system.png' %}" alt="System Image"
+                width="650px" height="450px">
+            <img src="{% static 'img/projects/lab_system/services_system.png' %}" alt="System Image"
+                width="650px" height="450px">
+        </div>
+        <a href="https://github.com/MatheusBrodt/Inventory_Control-Store-main" target="_blank">
+            Confira o código no GitHub
+        </a>
+    </div>
+
+    <div class="repo">
+        <h3>App Laboratório Carol VS</h3>
+        <p>Este app tem o objetivo de facilitar e agilizar o acesso ao sistema de gerenciamento do laboratório.
+            O app permite o acesso de qualque lugar sem que seja necessário estar na loja, isso auxilía e muito 
+            para realizar aquela consulta de algum serviço fora do horário de trablaho ou até mesmo consultar 
+            a disponibilidade de lentes.
+        </p>
+        <div class="img_project">
+            <img src="{% static 'img/projects/app_lab/Screen_Login.jpg' %}" alt="Screen Login App"
+                width="265px" height="450px">
+            <img src="{% static 'img/projects/app_lab/Home_Page.jpg' %}" alt="Home Page"
+                width="265px" height="450px">
+            <img src="{% static 'img/projects/app_lab/Password_Rec.jpg' %}" alt="Password Rec"
+                width="265px" height="450px">
+        </div>
+        <a href="https://github.com/MatheusBrodt/App_LabCarolVS" target="_blank">
+            Confira o código no GitHub
+        </a>
+    </div>
+
+    <div class="repo">
+        <h3>Web Currículo</h3>
+        <p>Este web currrículo tem o objetivo de me apresentar de uma forma mais completa, nesta página 
+            eu apresento meus projetos com links diretos para o código fonte, minhas qualificações com 
+            determinadas tecnologias e um pouco sobre minha história.
+        </p>
+        <div class="img_project">
+            <img src="{% static 'img/projects/web_curr/home_page.png' %}" alt="Images Project"
+                width="650px" height="350px">
+            <img src="{% static 'img/projects/web_curr/contact_page.png' %}" alt="Images Project"
+                width="650px" height="350px">
+        </div>
+        <a href="" target="_blank">
+            Confira o código no GitHub
+        </a>
+    </div>
+</div>
+{% endblock %}

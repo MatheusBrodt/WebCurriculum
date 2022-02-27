@@ -1,0 +1,24 @@
+{% extends 'model.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Qualifications</title>
+{% endblock %}
+
+{% block resp %}
+
+<link rel="stylesheet" href="{% static 'css/style_qualifications.css' %}">
+
+<div class="back">
+    <h1 class="title">Vivência em Tecnologias...</h1>
+    <div class="qualifications">
+        <div class="tec"><h3 class="tec">Python</h3><progress value="68" max="100"></progress></div>
+        <div class="tec2"><h3 class="tec2">DJango</h3><progress value="40" max="100"></progress></div>
+        <div class="tec"><h3 class="tec">MySql</h3><progress value="45" max="100"></progress></div>
+        <div class="tec2"><h3 class="tec2">Linux</h3><progress value="32" max="100"></progress></div>
+        <div class="tec"><h3 class="tec">JavaScript</h3><progress value="15" max="100"></progress></div>
+        <div class="tec2"><h3 class="tec2">React Native</h3><progress value="35" max="100"></progress></div>
+    </div>
+</div>
+
+{% endblock %}
